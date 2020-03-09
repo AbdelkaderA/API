@@ -1,3 +1,7 @@
+# Modifier db_connect.php avec vos parametres de connection !!
+
+
+
 ## Afficher produits par categorie 
 
 

@@ -1,9 +1,9 @@
 ## Afficher produits par categorie 
 
-go to -> DONNEEProduit.php
 
-    # Pour Afficher les produits de catégorie XXX : 
-    > DONNEEProduit.php?categorie=XXX 
+
+> ### Pour Afficher les produits de catégorie XXX : 
+> DONNEEProduit.php?categorie=XXX 
     
 ## Nouvelle commande 
 
@@ -15,14 +15,14 @@ Modifier **post.php**
 
 ## Pour récupérer l'historique de vos commandes  :
 
-Allez à -> getCommands.php?user=** Votre id d'utilisateur **
+> Allez à -> getCommands.php?user=** Votre id d'utilisateur **
 
 ## Modifier votre commande 
 
 ### Pour supprimer une commande 
 
-Allez à -> modif.php?idCommande=**L'id de votre commande**&delete=true
+> Allez à -> modif.php?idCommande=**L'id de votre commande**&delete=true
 
 ### Pour modifier la quantité commandée d'un article
 
-Allez à modif.php?idCommande=**L'id de votre commande**&idProduits=**L'id de votre produit a modifier**&newq=**La nouvelle quantité**
+> Allez à modif.php?idCommande=**L'id de votre commande**&idProduits=**L'id de votre produit a modifier**&newq=**La nouvelle quantité**

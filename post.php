@@ -1,6 +1,6 @@
 <?php
   $url = 'http://127.0.0.1/API/create.php';
-  $data = array('Adresses_idAdresses' => 22, 'Utilisateur_idUser' => 1, 'Produits_idProduits' => 5, 'Quantité' => 5);
+  $data = array('Adresses_idAdresses' => 22, 'Produits_idProduits' => 5, 'Quantité' => 5);
   // utilisez 'http' même si vous envoyez la requête sur https:// ...
   $options = array(
     'http' => array(

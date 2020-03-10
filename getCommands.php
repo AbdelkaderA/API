@@ -1,11 +1,12 @@
 <?php
+session_start();
 include 'db_connect.php';
 
-if(!empty($_GET['user'])){
+if(!empty($_SESSION['user'])){
 
     $db = db_connect() ;
     
-    $id = $_GET['user'] ;
+    $id = $_SESSION['user'] ;
     
     $cmds = $db->query('SELECT * FROM commande WHERE Utilisateur_idUser='.$id);
     
@@ -27,4 +28,9 @@ if(!empty($_GET['user'])){
     header('Content-Type: application/json');
     echo json_encode($commands, JSON_PRETTY_PRINT);
 
+}
+else {
+    $wu[] = "Wrong user !";
+    header('Content-Type: application/json');  // On renvoie le code en JSON 
+    echo json_encode($wu, JSON_PRETTY_PRINT);
 }

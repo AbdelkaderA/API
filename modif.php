@@ -13,7 +13,7 @@
 
      {
 
-        $db = new PDO('mysql:host=localhost;port=3308;dbname=testcommande','test','test');
+        $db = new PDO('mysql:host=localhost;port=3308;dbname=testcommande','root','');
         $update = $db->query('UPDATE produitscommande SET Quantité = '.$_GET['newq'].' WHERE  Commande_idCommande = '.$_GET['idCommande'].' AND Produits_idProduits = '.$_GET['idProduits'] );
 
      } 

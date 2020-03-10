@@ -14,13 +14,13 @@ if(!empty($_GET['user'])){
     while($row = $cmds->fetch()){
         $commands[$row['idCommande']] = Array();
     
-        $items = $db->query('SELECT Quantité, Nom, Prix FROM produitscommande
+        $items = $db->query('SELECT Quantité, Nom, Prix, idProduits FROM produitscommande
                             INNER JOIN commande ON Commande_idCommande=idCommande
                             INNER JOIN produits ON Produits_idProduits=idProduits
                             WHERE Commande_idCommande='.$row["idCommande"]);
         
         while($itm = $items->fetch()){
-            $commands[$row['idCommande']][] = ['nom'=>$itm['Nom'], 'qty' => $itm['Quantité'], 'price' => $itm['Prix'] ];
+            $commands[$row['idCommande']][] = ['nom'=>$itm['Nom'], 'qty' => $itm['Quantité'], 'price' => $itm['Prix'], $itm['idProduits'] ];
         }
        $commands[$row['idCommande']]['date'] = $row['Datedecommande'];
     }

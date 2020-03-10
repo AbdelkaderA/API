@@ -1,6 +1,7 @@
 # Modifier db_connect.php avec vos parametres de connection !!
 
-
+## Pour vous identifier
+> Allez à verifld.php?user=**Votre id**&password=**Votre mdp**   
 
 ## Afficher produits par categorie 
 

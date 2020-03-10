@@ -1,7 +1,7 @@
 <?php
      if (isset($_GET['idCommande']) && isset($_GET['delete'])) // Si idCommande et delete sont paramétré 
        {
-       		 $db = new PDO('mysql:host=localhost;port=3308;dbname=testcommande','test','test'); //On se connecte a la BDD
+       		 $db = new PDO('mysql:host=localhost;port=3308;dbname=testcommande','root',''); //On se connecte a la BDD
            $reponse = $db->prepare('DELETE FROM commande WHERE idCommande= ?'); //Premiére requête pour supprimer l'idCommande 
        		 $reponse1 = $db->prepare('DELETE FROM produitscommande WHERE Commande_idCommande= ?');
        		  echo $reponse->execute(array($_GET['idCommande']));

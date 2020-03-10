@@ -6,7 +6,7 @@
 
 
 
-> ### Pour Afficher les produits de catégorie XXX : 
+> ### Pour Afficher les produits de catégorie XXX : (Foot, Rugby, Basket,Volley, Tenis, Hand)
 > DONNEEProduit.php?categorie=XXX 
     
 ## Nouvelle commande 
